@@ -1,0 +1,59 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!-- android:id="@+id/">-->
+
+    <!-- Download Button -->
+    <Button android:id="@+id/btnProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download File with Progress Bar"
+        android:layout_marginTop="50dip"/>
+
+    <Button android:id="@+id/btnNetWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check If Network Connected"
+        android:layout_marginTop="50dip"/>
+
+    <!-- Image view to show image after downloading -->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="http://www.writerscentre.com.au/wp-content/uploads/2013/12/Writing-Picture-Books-grid.jpg"
+        android:id="@+id/editText3"
+        android:layout_column="2"
+        android:layout_weight="0.08"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download URL"
+        android:id="@+id/buttonurl" />
+    <ImageView android:id="@+id/my_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+         android:layout_width="270dp"
+         android:layout_height="wrap_content"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:text=" latency of downloading"
+         android:id="@+id/latency"
+         android:layout_marginTop="50dip"
+         android:layout_weight="0.08" />
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:id="@+id/showlatency"
+        android:layout_weight="0.08" />
+
+
+
+</LinearLayout>
